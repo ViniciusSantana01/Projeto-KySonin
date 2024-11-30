@@ -1,0 +1,172 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../Imagens/listar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh;       /* Garante que a altura ocupe a tela inteira */
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombras para destacar */
+    width: 90%; /* Largura responsiva */
+    max-width: 1000px; /* Limite máximo para largura */
+    overflow-x: auto; /* Permite rolagem horizontal para tabelas grandes */
+    position: relative; /* Adiciona controle posicional */
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mensagem explicativa */
+.intro-message {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Verificação de registros */
+.message {
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #FF5733; /* Cor laranja-avermelhada para destaque */
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 3px solid #FF5733; /* Borda laranja-avermelhada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombras para destacar a mensagem */
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff; /* Fundo branco para contraste */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordas sutis */
+    color: #333; /* Texto escuro */
+}
+
+table th {
+    background-color: #483D8B; /* Cor roxa para cabeçalho */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Linhas alternadas */
+}
+
+table tr:nth-child(odd) {
+    background-color: #f4f4f4; /* Linhas alternadas */
+}
+
+table tr:hover {
+    background-color: #ddd; /* Destaque ao passar o mouse */
+}
+
+table a {
+    color: #483D8B; /* Links roxos */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Botões de ação */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #483D8B; /* Cor roxa */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons a:hover {
+    background-color: #5E4AD3; /* Cor roxa mais clara no hover */
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Links para "Alterar" e "Excluir" na tabela */
+table .action {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+table .action.edit {
+    background-color: #4CAF50; /* Verde para "Alterar" */
+    color: #fff;
+}
+
+table .action.edit:hover {
+    background-color: #45a049;
+}
+
+table .action.delete {
+    background-color: #F44336; /* Vermelho para "Excluir" */
+    color: #fff;
+}
+
+table .action.delete:hover {
+    background-color: #D32F2F;
+}

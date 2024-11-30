@@ -1,0 +1,156 @@
+/* Definições gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../Imagens/registrar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    height: 100vh;           /* Faz a altura do body ocupar a tela inteira */
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para melhorar contraste */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombras para destacar o conteúdo */
+    width: 80%; /* Para garantir que o container tenha uma largura razoável */
+    max-width: 600px; /* Limita a largura máxima */
+}
+
+/* Container do logo e nome */
+.logo-container {
+    margin-bottom: 20px;  /* Espaçamento abaixo do logo */
+    position: relative;   /* Para a imagem ficar fora da borda */
+}
+
+/* Logo */
+.logo {
+    max-width: 120px;     /* Define um tamanho mais razoável para o logo */
+    width: 100%;          /* Faz a imagem se ajustar conforme a tela */
+    height: auto;         /* Preserva a proporção da imagem */
+    border-radius: 10px;  /* Se quiser arredondar as bordas da imagem */
+    margin-top: 50px;    /* Faz a imagem sair um pouco para cima da borda */
+}
+
+/* Nome do aplicativo */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Texto do cabeçalho */
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para o formulário */
+form {
+    margin-top: 20px;
+}
+
+/* Estilo para os campos do formulário */
+form input[type="text"],
+form input[type="time"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+/* Estilo para o botão de submit */
+form input[type="submit"] {
+    background-color: #483D8B; /* Cor roxa */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="submit"]:hover {
+    background-color: #5E4AD3; /* Cor roxa escuro para hover */
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para a mensagem de erro/sucesso */
+.message {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.success {
+    background-color: #4CAF50; /* Verde para sucesso */
+    color: white;
+}
+
+.error {
+    background-color: #F44336; /* Vermelho para erro */
+    color: white;
+}
+
+/* Botões */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #483D8B; /* Cor roxa */
+    border-radius: 5px;
+    margin: 10px; /* Maior espaçamento entre os botões */
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons a:hover {
+    background-color: #5E4AD3; /* Cor roxa escuro para hover */
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para o link de voltar */
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #7B68EE; /* Cor vermelha para o botão de voltar */
+    border-radius: 5px;
+    margin-top: 20px; /* Espaço superior para separá-lo dos campos */
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.back-link:hover {
+    background-color: #9370DB; /* Cor vermelha mais escura para hover */
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}

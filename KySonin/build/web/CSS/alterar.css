@@ -1,0 +1,118 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../Imagens/listar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh;       /* Garante que a altura ocupe a tela inteira */
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombras para destacar */
+    width: 90%; /* Largura responsiva */
+    max-width: 1000px; /* Limite máximo para largura */
+    overflow-x: auto; /* Permite rolagem horizontal para tabelas grandes */
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="time"], form textarea, form select {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #483D8B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5E4AD3;
+}
+
+/* Botões de ação */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #483D8B; /* Cor roxa */
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #5E4AD3;
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para mensagens de erro ou sucesso */
+.alert {
+    padding: 15px;
+    background-color: #f44336; /* Cor de fundo vermelho para erro */
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
